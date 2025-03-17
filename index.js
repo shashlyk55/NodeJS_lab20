@@ -1,7 +1,7 @@
 const express = require("express");
 const { engine } = require("express-handlebars");
 const path = require("path");
-const Routes = require('./Routes/Routes')
+const Routes = require('./routes/Routes')
 const app = express();
 
 app.use(express.static(path.join(__dirname, "public")));

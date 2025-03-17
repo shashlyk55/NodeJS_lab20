@@ -38,12 +38,7 @@ router.get('/Update', (req, res) => {
             const data = JSON.parse(json)
             const contacts = data.map((d) => `${d.name} - ${d.phone}`);
             
-            res.status(200).render("update", {
-              contacts,
-              isDisabled: true,
-              name,
-              phone,
-            });
+            res.status(200).render("update", { contacts, isDisabled: true, name, phone });
         }
     })
 })

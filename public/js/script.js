@@ -17,6 +17,11 @@ if (updateButton) {
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
 
+    if(!name){
+      alert('Заполните поля!')
+      return
+    }
+
     const data = {
       name: name,
       phone: phone,
@@ -45,6 +50,11 @@ if (addButton) {
   addButton.addEventListener("click", function () {
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
+
+    if(!name || !phone){
+      alert('Заполните поля!')
+      return
+    }
 
     const data = {
       name: name,
